@@ -1,0 +1,6 @@
+.header {
+  height: 200px;
+  background-image: url("../../../public/Quiz.jpg");
+  background-size: cover;
+  background-position: center;
+}
