@@ -1,12 +1,18 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
+import QuizShow from "../QuizShow/QuizShow";
 
 const Quizes = () => {
   const quizes = useLoaderData();
-  console.log(quizes);
+  // const quizInfo = quizes.data;
+  const quizData = quizes.data.questions;
+  console.log(quizData);
+
   return (
-    <div>
-      <h1>Quizes</h1>
+    <div className="flex flex-col justify-center items-center m-4">
+      {quizData.map((quiz) => (
+        <QuizShow key={quiz.id} quiz={quiz}></QuizShow>
+      ))}
     </div>
   );
 };

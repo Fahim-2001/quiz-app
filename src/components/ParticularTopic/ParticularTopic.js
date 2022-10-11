@@ -1,7 +1,12 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const ParticularTopic = ({ quizCategory }) => {
-  const { logo, name, total } = quizCategory;
+  const { id, logo, name, total } = quizCategory;
+  const navigate = useNavigate();
+  const handleShowQuizes = (id) => {
+    navigate(`/quizes/${id}`);
+  };
   return (
     <div className="flex items-center max-w-lg m-4 overflow-hidden bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg shadow-lg dark:bg-gray-800">
       <div className="w-1/3 bg-cover">
@@ -14,7 +19,10 @@ const ParticularTopic = ({ quizCategory }) => {
         <p className="mt-2 text-sm text-white">Number of quiz : {total}</p>
 
         <div className="flex justify-center mt-3 item-center">
-          <button className="px-2 py-1 text-xs font-bold text-white uppercase transition-colors duration-300 transform bg-gray-800 rounded dark:bg-gray-700 hover:bg-gray-700 dark:hover:bg-gray-600 focus:outline-none focus:bg-gray-700 dark:focus:bg-gray-600">
+          <button
+            className="px-2 py-1 text-xs font-bold text-white uppercase transition-colors duration-300 transform bg-gray-800 rounded dark:bg-gray-700 hover:bg-gray-700 dark:hover:bg-gray-600 focus:outline-none focus:bg-gray-700 dark:focus:bg-gray-600"
+            onClick={() => handleShowQuizes(id)}
+          >
             Start the game
           </button>
         </div>
