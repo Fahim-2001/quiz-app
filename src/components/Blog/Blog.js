@@ -27,6 +27,24 @@ const Blog = () => {
           </p>
         </div>
       </div>
+      <div className="m-12">
+        <h1 className="mx-4 text-xl text-gray-700 dark:text-white">
+          How does Context API Works?
+        </h1>
+
+        <div className="flex mt-8 md:mx-10 justify-center">
+          <span className="border border-blue-500"></span>
+
+          <p className="max-w-3xl px-4 text-gray-500  dark:text-gray-300">
+            React.createContext() is all you need. It returns a consumer and a
+            provider. Provider is a component that as it's names suggests
+            provides the state to its children. It will hold the "store" and be
+            the parent of all the components that might need that store.
+            Consumer as it so happens is a component that consumes and uses the
+            state. More information can be found on React's documentation page
+          </p>
+        </div>
+      </div>
     </div>
   );
 };
