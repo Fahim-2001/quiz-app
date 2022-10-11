@@ -4,7 +4,7 @@ import ParticularTopic from "../ParticularTopic/ParticularTopic";
 
 const Topics = () => {
   const quizCategories = useContext(QuizDataContext);
-  console.log(quizCategories);
+  // console.log(quizCategories);
   return (
     <div className="flex flex-col justify-center items-center">
       {quizCategories.map((quizCategory) => (
