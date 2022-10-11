@@ -15,7 +15,7 @@ const Statistics = () => {
   return (
     <div className="flex flex-col justify-center items-center mt-20 ">
       <LineChart
-        width={600}
+        width={500}
         height={300}
         data={quizCategories}
         margin={{ top: 5, right: 20, bottom: 5, left: 0 }}
