@@ -1,5 +1,5 @@
 import React from "react";
-import { useLoaderData, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const QuizTopics = ({ quizType }) => {
   const { id, logo, name, total } = quizType;

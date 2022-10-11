@@ -28,7 +28,12 @@ const Header = () => {
           aria-label="Back to homepage"
           className="flex flex-col items-center p-2 "
         >
-          <img src="favicon.ico" alt="" width={"50px"} height={"50px"} />
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/5692/5692030.png"
+            alt=""
+            width={"50px"}
+            height={"50px"}
+          />
           <p className="text-white text-xs ">QUIZ-Hunter</p>
         </Link>
         <ul className="items-stretch hidden space-x-3 md:flex">
