@@ -8,7 +8,7 @@ Hosted in Netlify -> [https://statuesque-tapioca-96dd4e.netlify.app/]
 
 ## Topics
 
-You can see quiz topics here -> [Topics]()
+You can see quiz topics here -> [https://statuesque-tapioca-96dd4e.netlify.app/topics]
 
 ## Resources & Credits
 
