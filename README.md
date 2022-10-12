@@ -4,7 +4,7 @@ In this site you can test your knowlwdge of web Development.
 
 ## Site Link
 
-Hosted in Netlify ->
+Hosted in Netlify -> [https://statuesque-tapioca-96dd4e.netlify.app/]
 
 ## Topics
 
@@ -16,5 +16,5 @@ Tailwind Component -> [MambaUI](https://www.mambaui.com/components), [MerakiUI](
 
 ## Other Resources
 
-Home Page Image -> [Google](path: public\Quiz.jpg)
-Site logo -> [Google](https://cdn-icons-png.flaticon.com/512/5692/5692030.png)
+Home Page Image -> [path: public\Quiz.jpg]
+Site logo -> [https://cdn-icons-png.flaticon.com/512/5692/5692030.png]
