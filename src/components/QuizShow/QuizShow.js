@@ -28,7 +28,7 @@ const QuizShow = ({ quiz }) => {
           onClick={() => showAns(correctAnswer)}
         />
       </div>
-      <div className="grid grid-cols-2 gap-2 m-4">
+      <div className="md:grid grid-cols-2 gap-2 m-4">
         <button
           className="focus:bg-slate-600 rounded-md"
           onClick={() => setAns(options[0])}

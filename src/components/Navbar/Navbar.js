@@ -54,22 +54,32 @@ const Header = () => {
             </Link>
           </li>
         </ul>
-        <button title="Button" type="button" className="p-4 md:hidden">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            className="w-6 h-6 dark:text-gray-100"
+        <div className="flex md:hidden ">
+          <Link
+            to="/home"
+            className="flex items-center px-4 -mb-1 hover:border-b-2 focus:text-yellow-400"
           >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            ></path>
-          </svg>
-        </button>
+            Home
+          </Link>
+          <Link
+            to="/topics"
+            className="flex items-center px-4 -mb-1 hover:border-b-2 focus:text-yellow-400 "
+          >
+            Topics
+          </Link>
+          <Link
+            to="/statistics"
+            className="flex items-center px-4 -mb-1 hover:border-b-2 focus:text-yellow-400 "
+          >
+            Statistics
+          </Link>
+          <Link
+            to="/blog"
+            className="flex items-center px-4 -mb-1 hover:border-b-2 focus:text-yellow-400 "
+          >
+            Blog
+          </Link>
+        </div>
       </div>
     </header>
   );
