@@ -1,15 +1,11 @@
+import { faEye } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { toast } from "react-toastify";
 
 const QuizShow = ({ quiz }) => {
   const { question, options, correctAnswer } = quiz;
-  // const [ans, setAns] = useState();
-  // console.log(ans);
-  // if (ans === correctAnswer) {
-  //   console.log("Correct!");
-  // } else {
-  //   console.log("Wrong!");
-  // }
+
   const setAns = (ans) => {
     console.log(ans);
     if (ans === correctAnswer) {
@@ -19,9 +15,18 @@ const QuizShow = ({ quiz }) => {
     }
   };
 
+  const [ans, showAns] = useState();
   return (
     <div className="flex flex-col justify-center items-center m-4 border-2 bg-gradient-to-r from-cyan-500 to-blue-500  shadow-lg dark:bg-gray-800 w-2/4 rounded-md text-white">
-      <h1 className="text-white text-md font-medium m-2">{question}</h1>
+      <div className="flex justify-around items-center">
+        <h1 className="text-white text-md font-medium m-2">{question}</h1>
+        <FontAwesomeIcon
+          icon={faEye}
+          className="mx-4"
+          value={correctAnswer}
+          onClick={() => showAns(correctAnswer)}
+        />
+      </div>
       <div className="grid grid-cols-2 gap-2 m-4">
         <button
           className="focus:bg-slate-600 rounded-md"
@@ -47,6 +52,11 @@ const QuizShow = ({ quiz }) => {
         >
           4.{options[3]}
         </button>
+      </div>
+      <div className="text-red-600 bg-yellow-300 p-4 mb-2 rounded-md font-medium">
+        <p>Click on the eye if you want to see correct answer</p>
+        <p>Specially Recomended to try self!</p>
+        <p className="text-xl font-semiold">{ans}</p>
       </div>
     </div>
   );
