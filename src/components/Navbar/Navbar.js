@@ -54,31 +54,35 @@ const Header = () => {
             </Link>
           </li>
         </ul>
-        <div className="flex md:hidden ">
-          <Link
-            to="/home"
-            className="flex items-center px-4 -mb-1 hover:border-b-2 focus:text-yellow-400"
-          >
-            Home
-          </Link>
-          <Link
-            to="/topics"
-            className="flex items-center px-4 -mb-1 hover:border-b-2 focus:text-yellow-400 "
-          >
-            Topics
-          </Link>
-          <Link
-            to="/statistics"
-            className="flex items-center px-4 -mb-1 hover:border-b-2 focus:text-yellow-400 "
-          >
-            Statistics
-          </Link>
-          <Link
-            to="/blog"
-            className="flex items-center px-4 -mb-1 hover:border-b-2 focus:text-yellow-400 "
-          >
-            Blog
-          </Link>
+        <div className="flex md:hidden">
+          <div>
+            <Link
+              to="/home"
+              className="flex items-center px-4 -mb-1 hover:border-b-2 focus:text-yellow-400"
+            >
+              Home
+            </Link>
+            <Link
+              to="/topics"
+              className="flex items-center px-4 -mb-1 mt-1 hover:border-b-2 focus:text-yellow-400 "
+            >
+              Topics
+            </Link>
+          </div>
+          <div>
+            <Link
+              to="/statistics"
+              className="flex items-center px-4 -mb-1 hover:border-b-2 focus:text-yellow-400 "
+            >
+              Statistics
+            </Link>
+            <Link
+              to="/blog"
+              className="flex items-center px-4 -mb-1 mt-1 hover:border-b-2 focus:text-yellow-400 "
+            >
+              Blog
+            </Link>
+          </div>
         </div>
       </div>
     </header>
