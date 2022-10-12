@@ -16,6 +16,7 @@ const QuizShow = ({ quiz }) => {
   };
 
   const [ans, showAns] = useState();
+
   return (
     <div className="flex flex-col justify-center items-center m-4 border-2 bg-gradient-to-r from-cyan-500 to-blue-500  shadow-lg dark:bg-gray-800 w-2/4 rounded-md text-white">
       <div className="flex justify-around items-center">
